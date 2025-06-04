@@ -5,7 +5,7 @@
 ### Deploy
 
 ```shell
-forge script script/DeployHelloWorld.s.sol:DeployHelloWorld --rpc-url base --broadcast --verify
+forge script script/DeployEventDemo.s.sol:DeployEventDemo --rpc-url base --broadcast --verify
 ```
 
 `.env` file must be populated as such:

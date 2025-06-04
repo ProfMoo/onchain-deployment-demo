@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 import "forge-std/Script.sol";
 import "../src/HelloWorld.sol";
 
-contract InteractHelloWorldCLI is Script {
+contract SendEventLogMessage is Script {
     function run() public {
         // Get the contract address from command line
         address contractAddress = vm.envAddress("CONTRACT_ADDRESS");
