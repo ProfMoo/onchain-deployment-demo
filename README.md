@@ -2,7 +2,7 @@
 
 ## Usage
 
-1.
+### Deploy
 
 ```shell
 forge script script/DeployHelloWorld.s.sol:DeployHelloWorld --rpc-url base --broadcast --verify
@@ -14,6 +14,12 @@ forge script script/DeployHelloWorld.s.sol:DeployHelloWorld --rpc-url base --bro
 PRIVATE_KEY=<secret_value>
 ETHERSCAN_API_KEY=<secret_value>
 RPC_URL=<secret_value>
+```
+
+### Call
+
+```bash
+CONTRACT_ADDRESS=0xYourContractAddress MESSAGE="I love indexing :)" forge script script/InteractHelloWorldCLI.s.sol:InteractHelloWorldCLI --rpc-url base --broadcast
 ```
 
 ## Additional Commands
