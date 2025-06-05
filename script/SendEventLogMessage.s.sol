@@ -2,7 +2,7 @@
 pragma solidity ^0.8.19;
 
 import "forge-std/Script.sol";
-import "../src/HelloWorld.sol";
+import "../src/DemoLogMessage.sol";
 
 contract SendEventLogMessage is Script {
     function run() public {
@@ -14,10 +14,10 @@ contract SendEventLogMessage is Script {
         vm.startBroadcast(deployerPrivateKey);
 
         // Get the contract instance
-        HelloWorld helloWorld = HelloWorld(contractAddress);
+        DemoLogMessage demoMessage = DemoLogMessage(contractAddress);
 
-        // Call the sayHello function with the provided message
-        helloWorld.sayHello(message);
+        // Call the logMessage function with the provided message
+        demoMessage.logMessage(message);
 
         vm.stopBroadcast();
     }
