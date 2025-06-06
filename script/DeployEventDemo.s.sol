@@ -9,7 +9,7 @@ contract DeployEventDemo is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        DemoLogMessage demoLogMessage = new DemoLogMessage();
+        new DemoLogMessage();
 
         vm.stopBroadcast();
     }
